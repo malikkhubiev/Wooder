@@ -233,6 +233,7 @@ input:focus{
         justify-content: center;
         position: relative;
         margin-top: 200px;
+        padding: 0 20px;
         &-container{
             display: flex;
             justify-content: space-between;
@@ -349,6 +350,7 @@ input:focus{
                     letter-spacing: 4px;
                     font-weight: bold;
                     font-size: 20px;
+                    height: 270px;
                     color: #3e3628;
                     writing-mode: vertical-rl;
                     text-transform: uppercase;
@@ -365,6 +367,7 @@ input:focus{
     }
 }
 .section-2{
+    padding: 0 20px;
     width: 100%;
     background-color: #fff;
     display: flex;
@@ -543,6 +546,7 @@ input:focus{
     background-color: #fff;
     &-container{
         width: 100%;
+        padding: 0 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -675,12 +679,12 @@ input:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 0;
+    padding: 80px 20px;
     &-container{
         border: 1px solid @main-color;
         width: 82%;
         display: flex;
-        padding: 200px 0;
+        padding: 200px 50px;
         justify-content: center;
         align-items: center;
         position: relative;
@@ -700,15 +704,15 @@ input:focus{
                 color: @main-color;
                 text-transform: uppercase;
                 letter-spacing: 4px;
-            }
-            &-header::before{
-                top: 25%;
-                left: -35%;
-                content: '';
-                position: absolute;
-                width: 150px;
-                height: 1px;
-                background-color: #fff;
+                &::before{
+                    top: 25%;
+                    left: -30%;
+                    content: '';
+                    position: absolute;
+                    width: 130px;
+                    height: 1px;
+                    background-color: #fff;
+                }
             }
             &-txt{
                 color: white;
@@ -774,7 +778,7 @@ input:focus{
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    padding: 120px 0;
+    padding: 120px 20px;
     &-container{
         width: 80%;
         display: flex;
@@ -878,6 +882,7 @@ input:focus{
     align-items: center;
     text-align: center;
     position: relative;
+    padding: 0 20px;
     &-txt1{
         width: 250px;
         font-size: 15px;
@@ -917,6 +922,11 @@ input:focus{
 
 
 @media(max-width: 1198px){
+    .section-double{
+        .section-main-container-right-txt{
+            height: auto;
+        }
+    }
     .section-2-container{
         &-one{
             height: auto;
@@ -968,8 +978,8 @@ input:focus{
     .section-4-container{
         &-desc{
             &-header::before{
-                left: -20%;
-                width: 90px;
+                left: -16.5%;
+                width: 70px;
             }
             &-txt::before{
                 left: -16%;
@@ -1008,7 +1018,7 @@ input:focus{
         }
         .section-main{
             margin-top: 150px;
-            padding: 50px 0;
+            padding: 50px;
             &-container{
                 flex-direction: column;
                 &-share{
@@ -1236,7 +1246,6 @@ input:focus{
         }
         .section-main{
             margin-top: 100px;
-            padding: 50px 20px;
             &-container{
                 &-share{
                     transform: none;
@@ -1293,7 +1302,6 @@ input:focus{
     }
     .section-2-container{
         width: 100%;
-        padding: 0 20px;
         &-one{
             &-left{
                 justify-content: center;
@@ -1306,16 +1314,9 @@ input:focus{
             }
         }
     }
-    .section-3-container{
-        padding: 0 20px;
-    }
-    .section-4{
-        padding: 80px 20px;
-    }
     .section-5{
         &-container{
             width: 100%;
-            padding: 0 25px;
             &-left{
                 box-shadow: 0 0 20px #ececec;
                 width: 100%;
@@ -1342,8 +1343,5 @@ input:focus{
                 }
             }
         }
-    }
-    .section-6{
-        padding: 50px 20px;
     }
 }
