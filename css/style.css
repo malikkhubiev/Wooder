@@ -5,6 +5,10 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
   max-width: 100%;
   font-family: 'Proxima Nova Rg';
@@ -240,6 +244,8 @@ input:focus {
   color: white;
 }
 .section-double .section-header-right-txt {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   position: relative;
   font-weight: bold;
   font-size: 15px;
@@ -1393,8 +1399,7 @@ input:focus {
     width: 90%;
   }
   .section-4-container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 100px 10px;
   }
   .section-4-container-desc {
     -webkit-box-align: center;
@@ -1403,8 +1408,7 @@ input:focus {
     text-align: center;
   }
   .section-4-container-desc-header {
-    width: 100%;
-    font-size: 33px;
+    font-size: 28px;
   }
   .section-4-container-desc-header::before {
     left: 50%;
@@ -1418,6 +1422,12 @@ input:focus {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+  .section-4-container-desc a {
+    width: 100%;
+  }
+  .section-4-container-desc-button {
+    width: 100%;
   }
   .section-5-container-left {
     width: 100%;
@@ -1435,17 +1445,17 @@ input:focus {
     top: 75%;
   }
   .section-double .section-header-center {
-    -webkit-transform: translateX(-45%);
-            transform: translateX(-45%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     left: 50%;
     top: 30px;
     position: absolute;
   }
-  .section-double .section-header-right-txt {
-    margin-left: 10px;
-  }
   .section-double .section-main {
     margin-top: 100px;
+  }
+  .section-double .section-main-container {
+    width: 100%;
   }
   .section-double .section-main-container-share {
     -webkit-transform: none;
